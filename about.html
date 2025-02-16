@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Galaxy Background */
+        body {
+            margin: 0;
+            overflow-x: hidden;
+            background: black;
+            position: relative;
+            color: white;
+        }
+
+        .galaxy {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: url('https://cdn.wallpapersafari.com/33/20/oz7qxS.gif') no-repeat center center fixed;
+            background-size: cover;
+            z-index: -2;
+        }
+
+        .stars {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: url('https://i.gifer.com/origin/ff/ff19cdd504ca11bbedc978ad3a2f5fc2_w200.gif') repeat;
+            z-index: -1;
+            animation: twinkle 50s linear infinite;
+        }
+
+        @keyframes twinkle {
+            from { background-position: 0 0; }
+            to { background-position: -1000px 1000px; }
+        }
+
+        /* Profile Image Hover Effect */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.4s ease-in-out;
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+        }
+
+        .profile-img:hover {
+            box-shadow: 0px 0px 30px rgba(0, 255, 255, 0.8);
+            border-color: cyan;
+            transform: scale(1.1);
+        }
+
+        /* About Section Hover Effect */
+        .about-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.4s ease-in-out;
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+            border: 2px solid transparent;
+            text-align: center;
+        }
+
+        .about-card:hover {
+            border-color: cyan;
+            box-shadow: 0px 0px 30px rgba(0, 255, 255, 0.8);
+            transform: scale(1.05);
+        }
+
+        /* Skill Card Hover Effect */
+        .skill-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border: 2px solid transparent;
+            padding: 20px;
+            border-radius: 12px;
+            transition: all 0.4s ease-in-out;
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+            text-align: center;
+        }
+
+        .skill-card:hover {
+            border-color: #ff00ff;
+            box-shadow: 0px 0px 30px rgba(255, 0, 255, 0.8);
+            transform: scale(1.08);
+        }
+
+        /* Circular Skill Icons */
+        .skill-icon {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease-in-out;
+            margin: auto;
+        }
+
+        .skill-icon:hover {
+            background: rgba(255, 0, 255, 0.6);
+            transform: rotate(10deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="galaxy"></div>
+    <div class="stars"></div>
+
+    <section class="max-w-6xl mx-auto p-8 text-center">
+        <!-- Profile Image -->
+        <div class="flex justify-center mb-6">
+            <img src="your-image.jpg" alt="Your Image" class="profile-img">
+        </div>
+
+        <!-- About Section -->
+        <div class="about-card max-w-3xl mx-auto">
+            <h2 class="text-4xl font-bold text-cyan-400">About Me</h2>
+            <p class="mt-4 text-gray-300">
+                I'm a passionate full-stack developer with expertise in front-end and back-end technologies.
+                I love building scalable applications and exploring new innovations in web development.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="max-w-6xl mx-auto p-8">
+        <div class="grid md:grid-cols-2 gap-10">
+            <!-- Frontend -->
+            <div class="skill-card">
+                <h2 class="text-2xl font-bold text-pink-400">Frontend Skills</h2>
+                <div class="mt-6 flex flex-wrap justify-center gap-6">
+                    <div class="skill-icon"><img src="https://img.icons8.com/color/48/html-5.png" alt="HTML"></div>
+                    <div class="skill-icon"><img src="https://img.icons8.com/color/48/css3.png" alt="CSS"></div>
+                    <div class="skill-icon"><img src="https://img.icons8.com/color/48/javascript.png" alt="JavaScript"></div>
+                </div>
+            </div>
+
+            <!-- Backend -->
+            <div class="skill-card">
+                <h2 class="text-2xl font-bold text-blue-400">Backend Skills</h2>
+                <div class="mt-6 flex flex-wrap justify-center gap-6">
+                    <div class="skill-icon"><img src="https://img.icons8.com/color/48/nodejs.png" alt="Node.js"></div>
+                    <div class="skill-icon"><img src="https://img.icons8.com/color/48/mongodb.png" alt="MongoDB"></div>
+                    <div class="skill-icon"><img src="https://img.icons8.com/color/48/python.png" alt="Django"></div>
+                </div>
+            </div>
+
+            <!-- Programming Languages -->
+            <div class="skill-card">
+                <h2 class="text-2xl font-bold text-green-400">Programming Languages</h2>
+                <div class="mt-6 flex flex-wrap justify-center gap-6">
+                    <div class="skill-icon"><img src="https://img.icons8.com/color/48/c-programming.png" alt="C"></div>
+                    <div class="skill-icon"><img src="https://img.icons8.com/color/48/c-plus-plus-logo.png" alt="C++"></div>
+                    <div class="skill-icon"><img src="https://img.icons8.com/color/48/python.png" alt="Python"></div>
+                </div>
+            </div>
+
+            <!-- Tools & Technologies -->
+            <div class="skill-card">
+                <h2 class="text-2xl font-bold text-yellow-400">Tools & Technologies</h2>
+                <div class="mt-6 flex flex-wrap justify-center gap-6">
+                    <div class="skill-icon"><img src="https://img.icons8.com/color/48/github.png" alt="GitHub"></div>
+                    <div class="skill-icon"><img src="https://img.icons8.com/color/48/visual-studio-code-2019.png" alt="VS Code"></div>
+                    <div class="skill-icon"><img src="https://img.icons8.com/color/48/postman-api.png" alt="Postman"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
