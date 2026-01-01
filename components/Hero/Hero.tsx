@@ -34,7 +34,7 @@ export default function Hero() {
     }
   }, [mousePosition])
 
-  const titles = ['Full Stack Developer', 'Full Stack Engineer', 'Tech Enthusiast']
+  const titles = ['Full Stack Developer', 'Video Editor', 'Freelance Creative']
   const [currentTitle, setCurrentTitle] = useState(0)
 
   useEffect(() => {
@@ -86,8 +86,8 @@ export default function Hero() {
 
             {/* Description */}
             <p className="text-base md:text-lg text-gray-400 leading-relaxed animate-fade-in">
-              I create innovative, scalable web applications using cutting-edge technologies.
-              Passionate Full Stack Developer focused on clean code, performance, and exceptional user experiences.
+              I create immersive digital experiences, blending high-quality video editing with robust full-stack web development.
+              Helping clients bring their vision to life through code and creativity.
             </p>
 
             {/* CTA Buttons */}
@@ -104,7 +104,7 @@ export default function Hero() {
               >
                 Get In Touch
               </a>
-            </div> 
+            </div>
           </div>
 
           {/* Right Side - Image Frame */}

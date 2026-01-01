@@ -1,6 +1,6 @@
 'use client'
 
-import { Heart, Github, Linkedin, Code2, ArrowUp, Mail, Phone, MapPin, Award, ExternalLink } from 'lucide-react'
+import { Heart, Code2, ArrowUp, Mail, Phone, MapPin, ExternalLink } from 'lucide-react'
 import { useState, useEffect } from 'react'
 
 export default function Footer() {
@@ -24,44 +24,39 @@ export default function Footer() {
     explore: [
       { name: 'Home', href: '#home' },
       { name: 'About', href: '#about' },
-      { name: 'Skills', href: '#skills' },
       { name: 'Projects', href: '#projects' },
-      { name: 'Experience', href: '#Experience' },
     ],
     connect: [
-      { name: 'Achievements', href: '#achievements' },
-      { name: 'Resume', href: '#resume' },
-      { name: 'Profiles', href: '#profiles' },
       { name: 'Contact', href: '#contact' },
     ]
   }
 
-  const socialLinks = [
-    {
-      name: 'GitHub',
-      url: 'https://github.com/Ankitjha91',
-      icon: <Github size={22} />,
-      color: 'hover:text-purple-400'
-    },
-    {
-      name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/ankit-j-1761a9216/',
-      icon: <Linkedin size={22} />,
-      color: 'hover:text-blue-400'
-    },
-    {
-      name: 'LeetCode',
-      url: 'https://leetcode.com/u/Ankit_jha_2003/',
-      icon: <Code2 size={22} />,
-      color: 'hover:text-yellow-400'
-    },
-    {
-      name: 'GeeksforGeeks',
-      url: 'https://www.geeksforgeeks.org/profile/ankitjhaix7g',
-      icon: <Award size={22} />,
-      color: 'hover:text-green-400'
-    },
-  ]
+  // const socialLinks = [
+  //   {
+  //     name: 'GitHub',
+  //     url: 'https://github.com/Ankitjha91',
+  //     icon: <Github size={22} />,
+  //     color: 'hover:text-purple-400'
+  //   },
+  //   {
+  //     name: 'LinkedIn',
+  //     url: 'https://www.linkedin.com/in/ankit-j-1761a9216/',
+  //     icon: <Linkedin size={22} />,
+  //     color: 'hover:text-blue-400'
+  //   },
+  //   {
+  //     name: 'LeetCode',
+  //     url: 'https://leetcode.com/u/Ankit_jha_2003/',
+  //     icon: <Code2 size={22} />,
+  //     color: 'hover:text-yellow-400'
+  //   },
+  //   {
+  //     name: 'GeeksforGeeks',
+  //     url: 'https://www.geeksforgeeks.org/profile/ankitjhaix7g',
+  //     icon: <Award size={22} />,
+  //     color: 'hover:text-green-400'
+  //   },
+  // ]
 
   const contactInfo = [
     {
@@ -100,26 +95,9 @@ export default function Footer() {
               <div className="h-1 w-16 bg-gradient-to-r from-purple-600 via-red-500 to-blue-400 rounded-full mb-4"></div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
-              A passionate Full Stack Developer crafting innovative web solutions and creating meaningful digital experiences.
+              A passionate Full Stack Developer & Video Editer crafting innovative web solutions and creating meaningful digital experiences.
               Let&apos;s build something amazing together!
             </p>
-
-            {/* Social Links */}
-            <div className="flex gap-3">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.name}
-                  href={social.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`p-3 bg-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700 ${social.color} transition-all duration-300 hover:scale-110 hover:border-purple-500 hover:shadow-lg hover:shadow-purple-500/20 group`}
-                  aria-label={social.name}
-                  title={social.name}
-                >
-                  {social.icon}
-                </a>
-              ))}
-            </div>
           </div>
 
           {/* Quick Links */}
