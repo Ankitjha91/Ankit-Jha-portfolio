@@ -45,7 +45,7 @@ export default function Hero() {
   }, [titles.length])
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-900">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-900 pt-8">
       {/* Animated background particles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div
